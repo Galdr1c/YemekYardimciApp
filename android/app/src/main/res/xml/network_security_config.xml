@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow HTTPS connections -->
+    <base-config cleartextTrafficAllowed="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    
+    <!-- Allow specific domains if needed for development -->
+    <domain-config cleartextTrafficAllowed="false">
+        <domain includeSubdomains="true">api.spoonacular.com</domain>
+        <domain includeSubdomains="true">trackapi.nutritionix.com</domain>
+    </domain-config>
+</network-security-config>
+

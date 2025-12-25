@@ -1,0 +1,83 @@
+name: yemek_yardimci_app
+description: A Flutter app for recipe search and photo-based calorie analysis.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.13.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Database
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # Networking
+  http: ^1.1.0
+  
+  # Image handling
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  
+  # State management
+  provider: ^6.1.1
+  
+  # Preferences storage
+  shared_preferences: ^2.2.2
+  
+  # Camera & ML
+  camera: ^0.10.5+5
+  google_mlkit_image_labeling: ^0.11.0
+  google_mlkit_object_detection: ^0.12.0
+  
+  # HMS Core (Huawei support) - Optional, only for Huawei devices
+  # huawei_ml: ^3.12.0+301
+  # huawei_ml_image: ^3.12.0+301
+  
+  # Permissions
+  permission_handler: ^11.1.0
+  
+  # Sharing
+  share_plus: ^7.2.1
+  
+  # UI helpers
+  cupertino_icons: ^1.0.6
+  flutter_spinkit: ^5.2.0
+  
+  # Date formatting
+  intl: ^0.18.1
+  
+  # Image processing
+  image: ^4.0.17
+  
+  # Firebase
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.4
+  
+  # Connectivity
+  connectivity_plus: ^6.1.1
+  
+  # Speech recognition
+  speech_to_text: ^7.0.0
+  
+  # Charts
+  fl_chart: ^0.68.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  generate: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+
